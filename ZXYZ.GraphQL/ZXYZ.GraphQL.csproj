@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.5" />
+   
+    <!-- Core GraphQL server support -->
+    <PackageReference Include="HotChocolate.AspNetCore" Version="13.0.0" />
+    
+    <!-- Optional: Adds support for authorization with [Authorize] attribute -->
+    <PackageReference Include="HotChocolate.AspNetCore.Authorization" Version="13.0.0" />
+    <PackageReference Include="HotChocolate.Diagnostics" Version="13.0.0" />
+    <PackageReference Include="HotChocolate.Types.Analyzers" Version="13.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZXYZ.SharedCore\Middleware\Middleware.csproj" />
+  </ItemGroup>
+
+</Project>
